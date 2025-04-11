@@ -8,7 +8,7 @@ Update the connection string in `appsettings.json` according to your SQL Server 
 
 ```json
  "ConnectionStrings": {
-   "DefaultConnection": "Server=SF-CPU-0226\\SQLEXPRESS;Database=Practical19;Trusted_Connection=True;TrustServerCertificate=True"
+   "DefaultConnection": "Server=(LocalDb)MSSQLLocalDb;Database=Practical19;Trusted_Connection=True;TrustServerCertificate=True"
  },
 ```
 
