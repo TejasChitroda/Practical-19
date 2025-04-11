@@ -17,10 +17,13 @@ namespace Practical19.Controllers
             _signInManager = signInManager;
             _roleManager = roleManager;
         }
-        // REGISTER VIEW
+       
         [HttpGet]
-        public IActionResult Register() => View();
-        // REGISTER LOGIC
+        public IActionResult Register()
+        {
+            return View();
+        }
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel model)
